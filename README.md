@@ -1,6 +1,6 @@
 # 👋 Hi there!
 
-> 🎓 **Student & Software Engineer** focused on **Backend Development**
+> 🎓 **Student & Software Engineer**
 
 I enjoy designing and building **reliable, maintainable, and scalable systems**, and I constantly work on improving my **technical and analytical skills**.
 

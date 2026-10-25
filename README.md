@@ -1,49 +1,43 @@
-<h1 align="center">👋 Hi there!</h1>
+<!-- The cards are animated SVGs rebuilt every 2 hours from live GitHub data:
+     scripts/build.py draws them, .github/workflows/profile.yml publishes them to the `output` branch. -->
 
-<h3 align="center">🎓 Student | 💻 Software Engineer | ⚙️ Backend Enthusiast</h3>
+<p><a href="https://github.com/flxnsee"><picture>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/flxnsee/flxnsee/output/hero-light.svg">
+  <img width="100%" alt="Artem Kostenko, backend developer from Kyiv. The sky above the Kyiv skyline matches the real time of day in Kyiv." src="https://raw.githubusercontent.com/flxnsee/flxnsee/output/hero-dark.svg">
+</picture></a></p>
 
 <p align="center">
-  <i>I design and build <b>reliable, maintainable, and scalable systems</b>. Constantly working on improving my <b>technical and analytical skills</b> to write clean, efficient code</i>
+  <a href="https://github.com/flxnsee?tab=repositories"><b>Repositories</b></a> &nbsp;·&nbsp;
+  <a href="https://github.com/flxnsee/claude-code-rpc">claude-code-rpc</a> &nbsp;·&nbsp;
+  <a href="https://github.com/flxnsee/faceit-analyzer">faceit-analyzer</a> &nbsp;·&nbsp;
+  Kyiv, Ukraine 🇺🇦
 </p>
 
-<p align="center">
-  <a href="https://github.com/flxnsee">
-    <img src="https://komarev.com/ghpvc/?username=flxnsee&color=blueviolet&style=flat-square&label=Profile+Views" alt="Profile Views" />
-  </a>
-</p>
+### Привіт, I'm Artem.
 
----
+I'm a student and a backend developer from Kyiv. Most of my code is **C#** and **Python**: REST APIs on .NET with EF Core, Telegram bots on aiogram, and the databases behind them. Lately I've been reaching into **Go** and the **React / Next.js** side too, because I like it when an interface feels alive: soft colours, small animations, a cat somewhere on the page.
 
-## 🧠 About Me
+Outside the backend I build games in **Unity** and **Unreal Engine**, model in **Blender**, and lose too many evenings to CS2, which is how [faceit-analyzer](https://github.com/flxnsee/faceit-analyzer) happened.
 
-- 💻 **Main languages:** **C#** & **Python** (actively used in real projects)
-- 🧩 **Core focus:** Backend development, System Design, RESTful APIs, and Clean Architecture
-- 🌱 **Currently exploring:** Advanced **.NET** features (like EF Core), Design Patterns, and database optimization
-- 🏗️ **Building:** Everything from complex reference systems and Telegram bots (Aiogram) to backend services
-- 🕹️ **Side interests:** Game development (Unity, Unreal Engine) & 3D Modeling (Blender)
-- 🎮 **Gamer at heart:** Mostly shooters and immersive story-driven games
-- 🚀 **Open to:** Collaboration, learning opportunities, and challenging backend projects
+<p><picture>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/flxnsee/flxnsee/output/neko-light.svg">
+  <img width="100%" alt="neko.status: a pixel cat whose mood follows my commits this week, with weekly, streak and yearly contribution counts and a 30-day activity pulse." src="https://raw.githubusercontent.com/flxnsee/flxnsee/output/neko-dark.svg">
+</picture></p>
 
----
+### Inventory
 
-## 🛠️ Tech Stack
+<p><a href="https://github.com/flxnsee/claude-code-rpc"><picture><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/flxnsee/flxnsee/output/item-claude-code-rpc-light.svg"><img width="50%" alt="claude-code-rpc: Claude Code as a Discord Rich Presence card with a tamagotchi cat." src="https://raw.githubusercontent.com/flxnsee/flxnsee/output/item-claude-code-rpc-dark.svg"></picture></a><a href="https://github.com/flxnsee/faceit-analyzer"><picture><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/flxnsee/flxnsee/output/item-faceit-analyzer-light.svg"><img width="50%" alt="faceit-analyzer: Faceit CS2 match history turned into trends and weak spots." src="https://raw.githubusercontent.com/flxnsee/flxnsee/output/item-faceit-analyzer-dark.svg"></picture></a></p>
 
-### 🔹 Languages
-![C#](https://img.shields.io/badge/-C%23-239120?style=for-the-badge&logo=csharp&logoColor=white)
-![Python](https://img.shields.io/badge/-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+<p><a href="https://github.com/flxnsee/parcel-tracker-bot"><picture><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/flxnsee/flxnsee/output/item-parcel-tracker-bot-light.svg"><img width="50%" alt="parcel-tracker-bot: Telegram bot that tracks AliExpress parcels." src="https://raw.githubusercontent.com/flxnsee/flxnsee/output/item-parcel-tracker-bot-dark.svg"></picture></a><a href="https://github.com/flxnsee/fit-chat-bot"><picture><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/flxnsee/flxnsee/output/item-fit-chat-bot-light.svg"><img width="50%" alt="fit-chat-bot: Telegram chat bot on aiogram and MongoDB." src="https://raw.githubusercontent.com/flxnsee/flxnsee/output/item-fit-chat-bot-dark.svg"></picture></a></p>
 
-### 🔹 Frameworks & Libraries
-![.NET](https://img.shields.io/badge/-.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
-![Aiogram](https://img.shields.io/badge/-Aiogram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)
+<p><a href="https://github.com/flxnsee/flansee"><picture><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/flxnsee/flxnsee/output/item-flansee-light.svg"><img width="50%" alt="flansee: HABITAT OS, my portfolio as a living ASCII habitat." src="https://raw.githubusercontent.com/flxnsee/flxnsee/output/item-flansee-dark.svg"></picture></a><a href="https://github.com/flxnsee?tab=repositories"><picture><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/flxnsee/flxnsee/output/item-locked-light.svg"><img width="50%" alt="Locked slot: the next project is still in the forge." src="https://raw.githubusercontent.com/flxnsee/flxnsee/output/item-locked-dark.svg"></picture></a></p>
 
-### 🔹 Databases & Tools
-![Microsoft SQL Server](https://img.shields.io/badge/-MSSQL-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white)
-![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-![Git](https://img.shields.io/badge/-Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+<p><picture>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/flxnsee/flxnsee/output/metro-light.svg">
+  <img width="100%" alt="Tech stack drawn as a Kyiv metro map. Backend: C#, .NET, EF Core, Python, aiogram, Go. Web: TypeScript, JavaScript, React, Next.js, Tailwind. Data and tools: MSSQL, MongoDB, SQLite, Git, Arch with Hyprland. Game and 3D, under construction: Unity, Unreal Engine, Blender." src="https://raw.githubusercontent.com/flxnsee/flxnsee/output/metro-dark.svg">
+</picture></p>
 
----
-
-<br>
-
-> Thanks for visiting my profile 🤍  
-> With love, **flxnsee**
+<p><picture>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/flxnsee/flxnsee/output/footer-light.svg">
+  <img width="100%" alt="Thanks for riding along." src="https://raw.githubusercontent.com/flxnsee/flxnsee/output/footer-dark.svg">
+</picture></p>

@@ -1,0 +1,6 @@
+dist/
+output/
+preview.html
+__pycache__/
+preview-*.html
+.claude/

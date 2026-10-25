@@ -1,0 +1,41 @@
+name: profile cards
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "17 */2 * * *" # every 2 hours, so the hero sky follows Kyiv time
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-cards
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Draw cards
+        run: python scripts/build.py --out dist
+        env:
+          # Optional PROFILE_TOKEN (classic PAT, read:user) also counts private contributions.
+          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN || github.token }}
+
+      - name: Publish to the output branch
+        working-directory: dist
+        run: |
+          git init -q -b output
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -qm "Rebuild profile cards"
+          git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" output

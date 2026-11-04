@@ -40,6 +40,12 @@ PROJECTS = [
     ("flansee", "HABITAT OS: my portfolio as a living ASCII habitat you can wander through.", "sprout"),
 ]
 
+# Pinned rarity for projects that matter more than their stars and commit dates say.
+# Values: legendary, epic, rare, common. Everything else is scored automatically.
+RARITY_OVERRIDE = {
+    "claude-code-rpc": "legendary",
+}
+
 # Stack as Kyiv metro lines. Station names that match a GitHub language get a
 # live "share of code" caption under them.
 METRO = [
@@ -552,11 +558,14 @@ def neko(t: dict, data: dict, now: datetime) -> str:
                         f'<text x="{tx + 16}" y="122" class="sans fg" font-size="28" font-weight="700">{v}</text>'
                         f'<text x="{tx + 142}" y="122" class="sans mu" font-size="12" text-anchor="end">{sub}</text></g>')
 
-    days = [today - timedelta(days=29 - i) for i in range(30)]
-    vals = [cal.get(d, 0) for d in days]
+    # 90 days in 3-day buckets: sparse weeks still read as a pulse, not a flat line with spikes
+    span, bucket = 90, 3
+    n = span // bucket
+    vals = [sum(cal.get(today - timedelta(days=(n - 1 - i) * bucket + k), 0) for k in range(bucket)) for i in range(n)]
     peak = max(vals + [1])
     x0, x1, y0, y1 = 300, 966, 168, 228
-    pts = [(x0 + i * (x1 - x0) / 29, y1 - v / peak * (y1 - y0)) for i, v in enumerate(vals)]
+    # square-root scale: one burst of commits no longer flattens every quieter week into the floor
+    pts = [(x0 + i * (x1 - x0) / (n - 1), y1 - math.sqrt(v / peak) * (y1 - y0)) for i, v in enumerate(vals)]
     path = smooth(pts, y1)
     accent = {"sleepy": t["lav"], "chill": t["mint"], "happy": t["rose"], "hyped": t["butter"]}[mood]
 
@@ -576,8 +585,8 @@ def neko(t: dict, data: dict, now: datetime) -> str:
 <path d="{path} L{x1},{y1} L{x0},{y1} Z" fill="url(#area)"/>
 <path id="pulse" d="{path}" fill="none" stroke="{accent}" stroke-width="2.5" stroke-linecap="round" pathLength="1" class="line"/>
 <circle r="4.5" fill="{accent}"><animateMotion dur="6s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;.45;1" calcMode="linear"><mpath href="#pulse"/></animateMotion></circle>
-<text x="{x0}" y="246" class="mono mu" font-size="11">30 days ago</text>
-<text x="{x1}" y="246" class="mono mu" font-size="11" text-anchor="end">today · peak {peak}/day</text>"""
+<text x="{x0}" y="246" class="mono mu" font-size="11">{span} days ago</text>
+<text x="{x1}" y="246" class="mono mu" font-size="11" text-anchor="end">today · peak {peak} in {bucket} days</text>"""
     return svg(1000, 260, body, f"Activity: {week} contributions this week, {year} in {today.year}. Mood: {mood_label}.")
 
 
@@ -610,6 +619,8 @@ def item_card(t: dict, repo: dict | None, name: str, blurb: str, ico: str, now: 
     age = (now - datetime.fromisoformat(pushed.replace("Z", "+00:00"))).days if pushed else 999
     score = stars * 2 + (3 if age <= 14 else 2 if age <= 60 else 1 if age <= 180 else 0)
     _, rarity, rkey = next(r for r in RARITY if score >= r[0])
+    if name in RARITY_OVERRIDE:
+        _, rarity, rkey = next(r for r in RARITY if r[1] == RARITY_OVERRIDE[name])
     rc = t[rkey]
     lang = (repo or {}).get("language") or "—"
     shimmer = rarity in ("legendary", "epic")

@@ -10,7 +10,7 @@
   <a href="https://github.com/flxnsee?tab=repositories"><b>Repositories</b></a> &nbsp;·&nbsp;
   <a href="https://github.com/flxnsee/claude-code-rpc">claude-code-rpc</a> &nbsp;·&nbsp;
   <a href="https://github.com/flxnsee/faceit-analyzer">faceit-analyzer</a> &nbsp;·&nbsp;
-  Kyiv, Ukraine 🇺🇦
+  Kyiv, Ukraine <img src="assets/ua.svg" height="12" alt="Ukrainian flag">
 </p>
 
 ### Привіт, I'm Artem.
@@ -21,7 +21,7 @@ Outside the backend I build games in **Unity** and **Unreal Engine**, model in *
 
 <p><picture>
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/flxnsee/flxnsee/output/neko-light.svg">
-  <img width="100%" alt="neko.status: a pixel cat whose mood follows my commits this week, with weekly, streak and yearly contribution counts and a 30-day activity pulse." src="https://raw.githubusercontent.com/flxnsee/flxnsee/output/neko-dark.svg">
+  <img width="100%" alt="neko.status: a pixel cat whose mood follows my commits this week, with weekly, streak and yearly contribution counts and a 90-day activity pulse." src="https://raw.githubusercontent.com/flxnsee/flxnsee/output/neko-dark.svg">
 </picture></p>
 
 ### Inventory

@@ -709,7 +709,7 @@ def footer(t: dict, now: datetime) -> str:
     body = f"""{base_css(t, extra)}
 <defs><linearGradient id="ua2" x1="0" x2="1"><stop offset="0" stop-color="#3d8bff"/><stop offset="1" stop-color="#ffd34d"/></linearGradient></defs>
 <text x="500" y="44" class="sans fg" font-size="20" font-weight="700" text-anchor="middle">Thanks for riding along.</text>
-<text x="500" y="70" class="mono mu" font-size="12" text-anchor="middle">This page rebuilds itself every 2 hours · last train left {now:%d %b, %H:%M} Kyiv time</text>
+<text x="500" y="70" class="mono mu" font-size="12" text-anchor="middle">This page rebuilds itself every hour · last train left {now:%d %b, %H:%M} Kyiv time</text>
 <g class="walk"><g class="step">{cat(0, 98, 3, t['cat'], t['cat_eye'])}</g></g>
 <rect x="0" y="138" width="1000" height="3" rx="1.5" fill="url(#ua2)" opacity=".85"/>"""
     return svg(1000, 150, body, "Thanks for visiting. A pixel cat walks across the page.")

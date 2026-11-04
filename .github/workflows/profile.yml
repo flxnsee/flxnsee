@@ -3,8 +3,11 @@ name: profile cards
 on:
   push:
     branches: [main]
+  # GitHub delays and drops scheduled runs under load (gaps of 5-10 hours were common here),
+  # so the schedule asks often and only acts as a fallback. The reliable trigger is an
+  # external cron (cron-job.org) calling workflow_dispatch every hour.
   schedule:
-    - cron: "17 */2 * * *" # every 2 hours, so the hero sky follows Kyiv time
+    - cron: "7,37 * * * *"
   workflow_dispatch:
 
 permissions:

@@ -1,4 +1,4 @@
-<!-- The cards are animated SVGs rebuilt every 2 hours from live GitHub data:
+<!-- The cards are animated SVGs rebuilt every hour from live GitHub data:
      scripts/build.py draws them, .github/workflows/profile.yml publishes them to the `output` branch. -->
 
 <p><a href="https://github.com/flxnsee"><picture>

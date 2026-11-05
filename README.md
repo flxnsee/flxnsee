@@ -8,8 +8,8 @@
 
 <p align="center">
   <a href="https://github.com/flxnsee?tab=repositories"><b>Repositories</b></a> &nbsp;·&nbsp;
-  <a href="https://github.com/flxnsee/claude-code-rpc">claude-code-rpc</a> &nbsp;·&nbsp;
   <a href="https://github.com/flxnsee/faceit-analyzer">faceit-analyzer</a> &nbsp;·&nbsp;
+  <a href="https://github.com/flxnsee/flansee">flansee</a> &nbsp;·&nbsp;
   Kyiv, Ukraine <img src="assets/ua.svg" height="12" alt="Ukrainian flag">
 </p>
 
@@ -26,9 +26,7 @@ Outside the backend I build games in **Unity** and **Unreal Engine**, model in *
 
 ### Inventory
 
-<p><a href="https://github.com/flxnsee/claude-code-rpc"><picture><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/flxnsee/flxnsee/output/item-claude-code-rpc-light.svg"><img width="50%" alt="claude-code-rpc: Claude Code as a Discord Rich Presence card with a tamagotchi cat." src="https://raw.githubusercontent.com/flxnsee/flxnsee/output/item-claude-code-rpc-dark.svg"></picture></a><a href="https://github.com/flxnsee/faceit-analyzer"><picture><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/flxnsee/flxnsee/output/item-faceit-analyzer-light.svg"><img width="50%" alt="faceit-analyzer: Faceit CS2 match history turned into trends and weak spots." src="https://raw.githubusercontent.com/flxnsee/flxnsee/output/item-faceit-analyzer-dark.svg"></picture></a></p>
-
-<p><a href="https://github.com/flxnsee/parcel-tracker-bot"><picture><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/flxnsee/flxnsee/output/item-parcel-tracker-bot-light.svg"><img width="50%" alt="parcel-tracker-bot: Telegram bot that tracks AliExpress parcels." src="https://raw.githubusercontent.com/flxnsee/flxnsee/output/item-parcel-tracker-bot-dark.svg"></picture></a><a href="https://github.com/flxnsee/fit-chat-bot"><picture><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/flxnsee/flxnsee/output/item-fit-chat-bot-light.svg"><img width="50%" alt="fit-chat-bot: Telegram chat bot on aiogram and MongoDB." src="https://raw.githubusercontent.com/flxnsee/flxnsee/output/item-fit-chat-bot-dark.svg"></picture></a></p>
+<p><a href="https://github.com/flxnsee/faceit-analyzer"><picture><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/flxnsee/flxnsee/output/item-faceit-analyzer-light.svg"><img width="50%" alt="faceit-analyzer: Faceit CS2 match history turned into trends and weak spots." src="https://raw.githubusercontent.com/flxnsee/flxnsee/output/item-faceit-analyzer-dark.svg"></picture></a><a href="https://github.com/flxnsee/parcel-tracker-bot"><picture><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/flxnsee/flxnsee/output/item-parcel-tracker-bot-light.svg"><img width="50%" alt="parcel-tracker-bot: Telegram bot that tracks AliExpress parcels." src="https://raw.githubusercontent.com/flxnsee/flxnsee/output/item-parcel-tracker-bot-dark.svg"></picture></a></p>
 
 <p><a href="https://github.com/flxnsee/flansee"><picture><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/flxnsee/flxnsee/output/item-flansee-light.svg"><img width="50%" alt="flansee: HABITAT OS, my portfolio as a living ASCII habitat." src="https://raw.githubusercontent.com/flxnsee/flxnsee/output/item-flansee-dark.svg"></picture></a><a href="https://github.com/flxnsee?tab=repositories"><picture><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/flxnsee/flxnsee/output/item-locked-light.svg"><img width="50%" alt="Locked slot: the next project is still in the forge." src="https://raw.githubusercontent.com/flxnsee/flxnsee/output/item-locked-dark.svg"></picture></a></p>
 

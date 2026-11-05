@@ -31,19 +31,18 @@ ROLES = [
     "CS2 enjoyer",
 ]
 
-# (repo, blurb, icon). The sixth inventory slot is always the locked one.
+# (repo, blurb, icon). Public repos only: the README links each card to its repo.
+# The locked slot always comes last; keep the count odd so the grid stays even.
 PROJECTS = [
-    ("claude-code-rpc", "Claude Code as a live Discord Rich Presence card, with a pixel tamagotchi cat that reacts to the session.", "cat"),
     ("faceit-analyzer", "Turns a Faceit CS2 match history into K/D trends, per-map stats and the weak spots the official site hides.", "crosshair"),
     ("parcel-tracker-bot", "Telegram bot that keeps an eye on AliExpress parcels and pings you when they move.", "parcel"),
-    ("fit-chat-bot", "Telegram chat bot for the FIT student community, built on aiogram and MongoDB.", "chat"),
     ("flansee", "HABITAT OS: my portfolio as a living ASCII habitat you can wander through.", "sprout"),
 ]
 
 # Pinned rarity for projects that matter more than their stars and commit dates say.
 # Values: legendary, epic, rare, common. Everything else is scored automatically.
 RARITY_OVERRIDE = {
-    "claude-code-rpc": "legendary",
+    "faceit-analyzer": "legendary",
 }
 
 # Stack as Kyiv metro lines. Station names that match a GitHub language get a
@@ -741,6 +740,10 @@ def main() -> None:
     if not data["user"]:
         # Keep the last good cards on the output branch rather than publishing zeros.
         raise SystemExit("GitHub API unavailable, not writing cards")
+    for repo, _, _ in PROJECTS:
+        if repo not in data["repos"]:
+            # a private or renamed repo: its card shows dashes and the README link 404s
+            print(f"::warning::{repo} is not a public repo of {USER}, remove it from PROJECTS and the README")
 
     for theme, t in THEMES.items():
         cards = {
